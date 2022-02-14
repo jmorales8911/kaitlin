@@ -1,0 +1,33 @@
+.question1{
+    display: inline-flex;
+    flex-direction:column;
+    text-align: center;
+    
+}
+#feedback{
+    
+    font-size: 4em;
+   text-align: center;
+}
+h1{
+    font-size: 5em;
+}
+p{
+    font-size: 5em;
+}
+input{
+    font-size: 5em;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#guess{
+    text-align: center;
+}
+
+#images{
+    max-width: 100%
+}

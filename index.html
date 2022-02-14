@@ -1,0 +1,133 @@
+<html>
+    <head>
+      <meta charset="UTF-8" />
+      <title> Our First VDAY </title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = 'question1'>
+            <h1>Happy VDAY</h1>
+            <p id='updateQ'>What date did we meet?</p>
+         
+            <label for="guess"></label>
+            <input type="text" id="guess">
+            <input type="submit" id="submitGuess" value="Check My Guess">
+            
+            <p id="feedback"></p>
+            <img id = 'images' src="./images/usMotorcycle.jpg">
+        </div>
+       
+    </body>
+    <script>
+        
+        const answerOne = '13'
+        const answerTwo = 'purple'
+        const answerThree = 'October'
+        const answerFour = 'Happy'
+        const answerFive = 'Major'
+        const answerSix = 'puppy'
+        const answerSeven = '19'
+        
+
+        let question = 1;
+        
+    
+        function checkGuess() {
+          if(question === 1){
+              let myGuess = guess.value
+              if (myGuess === answerOne) {
+                feedback.textContent = "You got it right! Mr.Massy can see where your next rose is! Here is a little hint there is a heart!"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= ''
+                document.getElementById('images').src = './images/rings.jpg'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+          if(question === 2){
+              let myGuess = guess.value
+              if (myGuess === answerTwo) {
+                feedback.textContent = "correct2"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= 'new question'
+                document.getElementById('images').src = './images/kiss.jpg'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+          if(question === 3){
+            let myGuess = guess.value
+              if (myGuess === answerThree) {
+                feedback.textContent = "correct3"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= 'new question'
+                document.getElementById('images').src = './images/usMotorcyles.jpg'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+          if(question === 4){
+            let myGuess = guess.value
+              if (myGuess === answerFour) {
+                feedback.textContent = "correct4"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= 'new question'
+                document.getElementById('images').src = './images/outsideHelicopter.jpg'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+         
+          if(question === 5){
+            let myGuess = guess.value
+              if (myGuess === answerFive) {
+                feedback.textContent = "correct5"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= 'new question'
+                document.getElementById('images').src = './images/insideHelicopter.jpg'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+          if(question === 6){
+            let myGuess = guess.value
+              if (myGuess === answerSix) {
+                feedback.textContent = "correct6"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= 'new question'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+         
+          if(question === 7){
+            let myGuess = guess.value
+              if (myGuess === answerSeven) {
+                feedback.textContent = "correct7"
+                question++;
+                let currentQuestion = document.getElementById('updateQ')
+                currentQuestion.innerHTML= 'new question'
+              } else if(myGuess !== answerOne){
+                feedback.textContent = "Try again!"
+             }
+             return;
+          }
+         
+       }
+       submitGuess.addEventListener('click', checkGuess)
+     </script>
+  </html>
+
+ 
