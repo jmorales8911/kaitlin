@@ -17,7 +17,7 @@ h2{
     font-size: 3em;
 }
 p{
-    font-size: 2em;
+    font-size: 1.5em;
     padding: .75em;
     text-align: center;
 }
@@ -36,4 +36,8 @@ body{
 
 #images{
     width: 100%;
+}
+
+#updateQ{
+    font-size: 1.5em;
 }
