@@ -11,9 +11,13 @@
 }
 h1{
     font-size: 5em;
+    color: red;
+}
+h2{
+    font-size: 3em;
 }
 p{
-    font-size: 5em;
+    font-size: 2em;
 }
 input{
     font-size: 5em;
@@ -28,5 +32,5 @@ body{
 }
 
 #images{
-    max-width: 100%
+    width: 100%;
 }

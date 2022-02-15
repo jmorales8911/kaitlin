@@ -6,27 +6,29 @@
     </head>
     <body>
         <div class = 'question1'>
-            <h1>Happy VDAY</h1>
-            <p id='updateQ'>What date did we meet?</p>
+            <h1>Happy VDAY </h1>
+            <h2>I love you Kaitlin!</h2>
+            <p id='updateQ'> What date is our anniversary just the number?
+            </p>
          
             <label for="guess"></label>
             <input type="text" id="guess">
             <input type="submit" id="submitGuess" value="Check My Guess">
             
             <p id="feedback"></p>
-            <img id = 'images' src="./images/usMotorcycle.jpg">
+            <img id = 'images' src="./images/us.jpg">
         </div>
        
     </body>
     <script>
         
-        const answerOne = '13'
-        const answerTwo = 'purple'
-        const answerThree = 'October'
-        const answerFour = 'Happy'
-        const answerFive = 'Major'
-        const answerSix = 'puppy'
-        const answerSeven = '19'
+        const answerOne = '12'
+        const answerTwo = 'Office'
+        const answerThree = 'Gin and tonic'
+        const answerFour = 'Patio'
+        const answerFive = 'Motorcycle'
+        const answerSix = 'Candy'
+        
         
 
         let question = 1;
@@ -35,53 +37,54 @@
         function checkGuess() {
           if(question === 1){
               let myGuess = guess.value
-              if (myGuess === answerOne) {
-                feedback.textContent = "You got it right! Mr.Massy can see where your next rose is! Here is a little hint there is a heart!"
+              if (myGuess == answerOne) {
+                //feedback.textContent = "You got it right! Your next rose is inside a heart!"
                 question++;
                 let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= ''
+                currentQuestion.innerHTML= 'Your first rose is located inside a heart, what room is it in?'
                 document.getElementById('images').src = './images/rings.jpg'
               } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
+                feedback.textContent = "'Hint : the date before we met"
              }
              return;
           }
           if(question === 2){
               let myGuess = guess.value
-              if (myGuess === answerTwo) {
-                feedback.textContent = "correct2"
+              if (myGuess == answerTwo) {
+               // feedback.textContent = ""
                 question++;
                 let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= 'new question'
-                document.getElementById('images').src = './images/kiss.jpg'
+                currentQuestion.innerHTML= 'Something you introduced me to that we have almost everynight, it shares a place with your next rose.'
+                document.getElementById('images').src = './images/outsideHelicopter.jpg'
+                
               } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
+                feedback.textContent = 'Hint : Mr. Massi can see it!' 
              }
              return;
           }
           if(question === 3){
             let myGuess = guess.value
               if (myGuess === answerThree) {
-                feedback.textContent = "correct3"
+              //  feedback.textContent = "Its in the whiskey barrel"
                 question++;
                 let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= 'new question'
-                document.getElementById('images').src = './images/usMotorcyles.jpg'
+                currentQuestion.innerHTML= 'Where we first cuddled together is where your next rose is located'
+                document.getElementById('images').src = './images/usMotorcycle.jpg'
               } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
+                feedback.textContent = 'I can drink more of it then you can'
              }
              return;
           }
           if(question === 4){
             let myGuess = guess.value
               if (myGuess === answerFour) {
-                feedback.textContent = "correct4"
+              //  feedback.textContent = ""
                 question++;
                 let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= 'new question'
-                document.getElementById('images').src = './images/outsideHelicopter.jpg'
+                currentQuestion.innerHTML= 'Your next rose is hiding where our new passion is!'
+                document.getElementById('images').src = './images/kiss.jpg'
               } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
+                feedback.textContent = "Hint :It's outside!"
              }
              return;
           }
@@ -89,41 +92,27 @@
           if(question === 5){
             let myGuess = guess.value
               if (myGuess === answerFive) {
-                feedback.textContent = "correct5"
+             //   feedback.textContent = "correct5"
                 question++;
                 let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= 'new question'
+                currentQuestion.innerHTML= 'You wanted to name my motorcyle this?'
                 document.getElementById('images').src = './images/insideHelicopter.jpg'
               } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
+                feedback.textContent = "Gamora!"
              }
              return;
           }
           if(question === 6){
-            let myGuess = guess.value
-              if (myGuess === answerSix) {
-                feedback.textContent = "correct6"
-                question++;
+            
                 let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= 'new question'
-              } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
-             }
+                currentQuestion.innerHTML= 'I am so in love with you Kaitlin, I feel so blessed as God has really paved our way, I am so thankful to him everyday for you. I really cant wait for you to be my wife one day. You are truly the most beautiful person I have ever met.'
+                document.getElementById('images').src = './images/poem.jpg'
+                feedback.textContent = "Go check the candy drawer!"
+             
              return;
           }
          
-          if(question === 7){
-            let myGuess = guess.value
-              if (myGuess === answerSeven) {
-                feedback.textContent = "correct7"
-                question++;
-                let currentQuestion = document.getElementById('updateQ')
-                currentQuestion.innerHTML= 'new question'
-              } else if(myGuess !== answerOne){
-                feedback.textContent = "Try again!"
-             }
-             return;
-          }
+         
          
        }
        submitGuess.addEventListener('click', checkGuess)
